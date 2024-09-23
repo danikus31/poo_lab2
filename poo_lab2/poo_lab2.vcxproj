@@ -127,8 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="connection.cpp" />
+    <ClCompile Include="factory.cpp" />
     <ClCompile Include="poo_lab2.cpp" />
     <ClCompile Include="VariadicTable.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="factory.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
