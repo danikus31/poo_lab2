@@ -12,6 +12,7 @@ int main()
         cout << "1. adaugare rand\n";
         cout << "2. afiseasa cutiile randului\n";
         cout << "3. adauga o cutie\n";
+        cout << "4. stere o cutie\n";
         cout << "0. Iesire\n";
         cout << "Optiune: ";
         cin >> menuOption;
@@ -25,6 +26,9 @@ int main()
             break;
         case 3:
             myfactory.addBox();
+            break;
+        case 4:
+            myfactory.pop();
             break;
         case 0:
             cout << "Iesire...\n";

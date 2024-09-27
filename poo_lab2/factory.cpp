@@ -135,3 +135,33 @@ void factory::addBox()
     }
 }
 
+void factory::pop()
+{
+    system("cls");
+    this->showQueues();
+    cout << "introducti ID rindului la care prima cutie o sa fie stearsa\n";
+    int boxline_to_delete = 0;
+    cin >> boxline_to_delete;
+
+    int index = -1;
+    for (int i = 0; i < boxes.size(); ++i) {
+        if (boxes[i].lineID == boxline_to_delete) {
+            index = i;
+            break;
+        }
+    }
+
+
+    system("cls");
+
+    if (index != -1) {
+        queues[boxline_to_delete-1].total_volume -= boxes[index].depth * boxes[index].height * boxes[index].width;
+        queues[boxline_to_delete-1].total_surface -= (2 * boxes[index].depth * boxes[index].height) + (2 * boxes[index].depth * boxes[index].width) + (2 * boxes[index].height * boxes[index].width);
+        boxes.erase(boxes.begin() + index);
+        cout << "curia a fost stearsa";
+    }
+    else {
+        cout << "cutii nu sunt";
+    }
+}
+

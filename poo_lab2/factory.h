@@ -25,6 +25,7 @@ public :
     void showBoxes();
     void addQueue();
     void addBox();
+    void pop();
 
 };
 

@@ -4,6 +4,7 @@
 #include <vector> 
 #include <string>
 #include <limits>
+#include <algorithm>
 #include <fstream>
 #include "VariadicTable.h"
 
