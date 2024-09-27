@@ -106,6 +106,8 @@ void factory::addBox()
 
             system("cls");
             cout << "Cutia a fost introdusa cu succes!\n";
+            cout << "Datele cutiei introduse:\n";
+            cout << "volumul:" << new_box.depth * new_box.height * new_box.width << "  suprafata:" << (2 * new_box.depth * new_box.height) + (2 * new_box.depth * new_box.width) + (2 * new_box.height * new_box.width);
             break;
         case 3:
             cout << "\nIntroduceti inaltimea\n";
@@ -124,6 +126,8 @@ void factory::addBox()
 
             system("cls");
             cout << "Cutia a fost introdusa cu succes!\n";
+            cout << "Datele cutiei introduse:\n";
+            cout << "volumul:" << new_box.depth * new_box.height * new_box.width << "  suprafata:" << (2 * new_box.depth * new_box.height) + (2 * new_box.depth * new_box.width) + (2 * new_box.height * new_box.width);
             break;
         default:
             break;
